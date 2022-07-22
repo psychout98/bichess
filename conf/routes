@@ -1,0 +1,10 @@
+GET     /                           controllers.HomeController.index()
+
+POST    /board                      controllers.BoardController.create()
+GET     /board                      controllers.BoardController.findAll()
+GET     /game/:id                   controllers.BoardController.findGame(id: String)
+GET     /board/:id                  controllers.BoardController.findOne(id: String)
+PUT     /board/:id                  controllers.BoardController.update(id: String)
+DELETE  /board/:id                  controllers.BoardController.delete(id: String)
+
+GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
